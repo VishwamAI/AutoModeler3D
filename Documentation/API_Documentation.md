@@ -12,6 +12,7 @@ This document provides a comprehensive guide to the AutoModeler3D system's API.
 - [Asset Management API](#asset-management-api)
 - [Export/Import Module API](#exportimport-module-api)
 - [Rendering Engine API](#rendering-engine-api)
+- [AI Tools API](#ai-tools-api)
 
 ## Overview
 The AutoModeler3D API allows for programmatic access to the system's features, enabling users to create, manipulate, and export 3D models through code.
@@ -39,3 +40,35 @@ Details on the API functions for exporting and importing models in various file 
 
 ## Rendering Engine API
 Documentation of the API for the real-time preview renderer and high-quality offline renderer.
+
+### Class: RenderingEngine
+
+#### Methods:
+- `ray_trace(scene: object, camera: object) -> np.array`
+  Performs real-time ray tracing on the given scene from the specified camera perspective.
+
+- `hybrid_render(scene: object, camera: object) -> np.array`
+  Applies hybrid rendering techniques to the given scene from the specified camera perspective.
+
+- `gpu_accelerate(render_function: callable) -> callable`
+  Applies GPU acceleration to the provided rendering function for enhanced performance.
+
+## AI Tools API
+
+### Class: AITools
+
+#### Methods:
+- `load_denoising_model(model_path: str) -> None`
+  Loads the AI-driven denoising model from the specified path.
+
+- `denoise_image(noisy_image: np.array) -> np.array`
+  Applies AI-driven denoising to the input image.
+
+- `load_animation_model(model_path: str) -> None`
+  Loads the AI-driven character animation model from the specified path.
+
+- `animate_character(character_model: object, animation_parameters: dict) -> object`
+  Applies AI-driven animation to the character model based on the provided parameters.
+
+- `integrate_ai_modeling(model_data: object) -> object`
+  Integrates AI modeling tools to enhance the provided model data.
