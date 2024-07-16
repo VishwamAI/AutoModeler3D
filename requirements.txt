@@ -1,4 +1,4 @@
 # Dependencies for AutoModeler3D project
 numpy==1.21.2
-open3d==0.13.0
+open3d==0.18.0
 bpy==2.93.0
