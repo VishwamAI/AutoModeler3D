@@ -104,3 +104,87 @@ Create stunning visualizations of your 3D models using AutoModeler3D's rendering
 6. Save or export your rendered image.
 
 These tutorials should help you get started with the core features of AutoModeler3D. Remember to experiment and explore the software to discover its full potential!
+
+## AI Tools Tutorial
+
+This tutorial will walk you through the process of using the AI Tools in AutoModeler3D to denoise images and animate characters.
+
+### Denoising an Image
+```python
+from ai_tools import AITools
+
+# Initialize the AI Tools
+ai_tools = AITools()
+
+# Load the denoising model
+ai_tools.load_denoising_model('path_to_model')
+
+# Denoise an image
+noisy_image = ... # Your noisy image data
+denoised_image = ai_tools.denoise_image(noisy_image)
+```
+
+### Animating a Character
+```python
+from ai_tools import AITools
+
+# Initialize the AI Tools
+ai_tools = AITools()
+
+# Load the animation model
+ai_tools.load_animation_model('path_to_animation_model')
+
+# Animate the character
+character_model = ... # Your character model data
+animation_parameters = ... # Your animation parameters
+animated_character = ai_tools.animate_character(character_model, animation_parameters)
+```
+
+## Rendering Engine Tutorial
+
+This tutorial demonstrates how to use the Rendering Engine's features, including real-time ray tracing, hybrid rendering, and GPU acceleration.
+
+### Real-time Ray Tracing
+```python
+from rendering_engine import RenderingEngine
+
+# Initialize the Rendering Engine
+engine = RenderingEngine()
+
+# Set up your scene and camera
+scene = ... # Your scene data
+camera = ... # Your camera data
+
+# Perform ray tracing
+ray_traced_image = engine.ray_trace(scene, camera)
+```
+
+### Hybrid Rendering
+```python
+from rendering_engine import RenderingEngine
+
+# Initialize the Rendering Engine
+engine = RenderingEngine()
+
+# Set up your scene and camera
+scene = ... # Your scene data
+camera = ... # Your camera data
+
+# Perform hybrid rendering
+hybrid_rendered_image = engine.hybrid_render(scene, camera)
+```
+
+### GPU Acceleration
+```python
+from rendering_engine import RenderingEngine
+
+# Initialize the Rendering Engine
+engine = RenderingEngine()
+
+# Define your render function
+def render_function():
+    ... # Your rendering logic
+
+# Apply GPU acceleration
+gpu_accelerated_function = engine.gpu_accelerate(render_function)
+```
